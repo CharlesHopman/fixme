@@ -98,6 +98,8 @@
     border-radius: 4px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $font-1;
+    max-height: -webkit-fill-available;
+    overflow-y: scroll;
   }
   .issue-order-by {
     background-color: $main-white;
@@ -119,7 +121,7 @@
       display: unset;
       @supports (position: sticky) {
         position: sticky;
-        top: auto;
+        top: 0;
         z-index: $zindex-sticky;
       }
     }
